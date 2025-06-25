@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: minmax(8rem, max-content) minmax(25rem, min-content) 1fr 45rem;
+    height: 100vh;
+    // grid-template-rows: ;
+}
+
+.section-sidebar{
+    grid-column: 1 / 2;
+
+}
+
+.clock__img{
+    height: 2rem;
+    width: 2rem;
+}

@@ -1,0 +1,70 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+.sidebar__logo-img {
+  margin-top: 1rem;
+  height: 5rem;
+  width: 5.7rem;
+}
+.sidebar__items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar__item {
+  transition: all 0.3s ease-in-out;
+}
+.sidebar__item:hover {
+  background-color: #F2ECE2;
+}
+.sidebar__icon {
+  padding: 1.8rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.sidebar__doubt {
+  height: 3.5rem;
+  color: #F2ECE2;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: minmax(8rem, max-content) minmax(25rem, min-content) 1fr 45rem;
+  height: 100vh;
+}
+
+.section-sidebar {
+  grid-column: 1/2;
+}
+
+.clock__img {
+  height: 2rem;
+  width: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

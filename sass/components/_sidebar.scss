@@ -1,0 +1,48 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    
+    &__logo-img{
+        margin-top: 1rem;
+        height: 5rem;
+        width: 5.7rem;
+    }
+    
+    &__items{
+        list-style: none;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // gap: 1.8rem;
+    }
+    &__item{
+        transition: all .3s ease-in-out;
+    }
+    &__item:hover{
+        background-color: $color-bg;
+    }
+        
+
+    &__icon{
+        padding: 1.8rem;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+
+    &__doubt{
+        height: 3.5rem;
+        color: $color-light;
+        width: 3.5rem;
+        border-radius: 50%;
+        background-color: $color-dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}
