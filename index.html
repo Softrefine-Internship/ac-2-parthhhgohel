@@ -8,26 +8,133 @@
   </head>
   <body>
 
+
+
     <div class="section__sidebar">
-      <div class="sidebar">
-        <div class="sidebar__logo">
-          <img src="img/logo.png" alt="ziferblat logo" class="sidebar__logo-img">
+      <!-- Left Sidebar -->
+      <div class="sidebar__left">
+        <div class="sidebar__left__logos">
+          <img src="img/logo.png" alt="ziferblat logo" class="sidebar__left__logo">
         </div>
-        <ul class="sidebar__items">
-          <li class="sidebar__item"><ion-icon name="home-outline" class="sidebar__icon"></ion-icon></li>
-          <li class="sidebar__item"><ion-icon name="people-outline" class="sidebar__icon"></ion-icon></li>
-          <li class="sidebar__item"><ion-icon name="calendar-outline" class="sidebar__icon"></ion-icon></li>
-          <li class="sidebar__item"><ion-icon name="calendar-outline" class="sidebar__icon"></ion-icon></li>
-          <li class="sidebar__item"><img src="img/clock.png" alt="clock icon" class="clock__img"></li>
-          <li class="sidebar__item"><ion-icon name="chatbubble-outline" class="sidebar__icon"></ion-icon></li>
+        <ul class="sidebar__left__items">
+          <li class="sidebar__left__item"><button href="#"><ion-icon name="home-outline" class="sidebar__left__icon"></ion-icon></button></li>
+          <li class="sidebar__left__item"><button href="#"><ion-icon name="people-outline" class="sidebar__left__icon"></ion-icon></button></li>
+          <li class="sidebar__left__item"><button href="#"><ion-icon name="calendar-outline" class="sidebar__left__icon"></ion-icon></button></li>
+          <li class="sidebar__left__item"><button href="#"><img src="img/clock.png" alt="clock icon" class="clock__img"></button></li>
+          <li class="sidebar__left__item"><button href="#"><ion-icon name="chatbubble-outline" class="sidebar__left__icon"></ion-icon></button></li>
         </ul>
-        <div class="sidebar__doubt">
+        <div class="sidebar__left__doubt">
           <p>?</p>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="sidebar__right">
+        <div class="sidebar__right__header">
+          <h1 class="heading--1">Ziferblat</h1>
+          <p class="sm--text">Teamwork & time management</p>
+        </div>
+        <div class="sidebar__menus-bar">
+          <ul class="sidebar__menus">
+            <li class="sidebar__menu heading--3">
+              <input type="checkbox" id="menu-projects--1" class="toggle__input--1">
+              <label for="menu-projects-12" class="toggle__label--1 heading--3">
+                Team
+                <ion-icon name="chevron-forward-outline" class="sidebar__right__icon"></ion-icon>
+              </label>
+            </li>
+            <li class="sidebar__menu heading--3">
+              <input type="checkbox" id="menu-projects--2" class="toggle__input--2">
+              <label for="menu-projects--2" class="toggle__label--2 heading--3">
+                Projects
+                <ion-icon name="chevron-forward-outline" class="sidebar__right__icon"></ion-icon>
+              </label>
+              <ul class="sidebar__inner__menus--2">
+                <li class="sidebar__inner__menu sm--text">All Projects (4)</li>
+                <li class="sidebar__inner__menu sm--text">Design system</li>
+                <li class="sidebar__inner__menu sm--text">Make unique design for customer</li>
+                <li class="sidebar__inner__menu sm--text">Use Flow</li>
+                <li class="sidebar__inner__menu sm--text">UX research</li>
+                <li class="sidebar__inner__menu sm--text">Add new project</li>
+              </ul>
+            </li>
+            <li class="sidebar__menu heading--3">
+              <input type="checkbox" id="menu-projects--3" class="toggle__input--3">
+              <label for="menu-projects--3" class="toggle__label--3 heading--3">
+                Tasks
+                <ion-icon name="chevron-forward-outline" class="sidebar__right__icon"></ion-icon>
+              </label>
+              <ul class="sidebar__inner__menus--3">
+                <li class="sidebar__inner__menu sm--text">All Tasks (3)</li>
+                <li class="sidebar__inner__menu sm--text">New (1)</li>
+                <li class="sidebar__inner__menu sm--text">In progress</li>
+                <li class="sidebar__inner__menu sm--text">Done (1)</li>
+                <li class="sidebar__inner__menu sm--text">Add new task</li>
+              </ul>
+            </li>
+            <li class="sidebar__menu heading--3">
+              <input type="checkbox" id="menu-projects--4" class="toggle__input--4">
+              <label for="menu-projects--4" class="toggle__label--4 heading--3">
+                Reminders
+                <ion-icon name="chevron-forward-outline" class="sidebar__right__icon"></ion-icon>
+              </label>
+            </li>
+            <li class="sidebar__menu heading--3">
+              <input type="checkbox" id="menu-projects--5" class="toggle__input--5">
+              <label for="menu-projects--5" class="toggle__label--5 heading--3">
+                Messenger
+                <ion-icon name="chevron-forward-outline" class="sidebar__right__icon"></ion-icon>
+              </label>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
     
-    
+    <div class="section__main">
+      <div class="main">
+        <div class="main__search">
+          <h1 class="heading--1">Today, 4 October</h1>
+          <div class="search">
+            <ion-icon name="search-outline" class="search__icon"></ion-icon>
+            <input type="text" placeholder="Search for..." class="search__input">
+          </div>  
+        </div>
+        <div class="main__body">
+          <div class="main__body__heading">
+            <p class="heading--3">Recent Projects</p><a href="#">View all</a>
+          </div>
+          <div class="cards">
+            <div class="card card--1">
+              <div class="card__header">
+                <div class="card__imgs">
+                  <div class="card__img"></div>
+                  <img src="img/face-2.jpg" alt="faces" class="card__img">
+                  <img src="img/face-3.jpg" alt="faces" class="card__img">
+                </div>
+                <div class="card__menu">
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="card__dots"></a>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="heading--1">Design system</h2>
+                <p class="sm--text">Deadline: 18 October</p>
+              </div>
+
+              <div class="card__footer">
+                <p class="sm--text">84 hours / 40%</p>
+                <progress value="40" max="100"></progress>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="main__footer">
+
+        </div>
+      </div>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
