@@ -79,6 +79,12 @@
       align-items: center;
       justify-content: center;
       margin: auto;
+      font-size: 1.7rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-dark-3;
+      }
     }
   }
 

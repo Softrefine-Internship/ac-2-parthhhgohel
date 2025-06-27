@@ -102,9 +102,10 @@
         </div>
         <div class="main__body">
           <div class="main__body__heading">
-            <p class="heading--3">Recent Projects</p><a href="#">View all</a>
+            <p class="heading--3">Recent Projects</p><a href="#" class="">View all</a>
           </div>
-          <div class="cards">
+          <div class="main__cards">
+            <!-- Card 1 -->
             <div class="card card--1">
               <div class="card__header">
                 <div class="card__imgs">
@@ -117,7 +118,7 @@
                 </div>
               </div>
               <div class="card__body">
-                <h2 class="heading--1">Design system</h2>
+                <h2 class="heading--2">Design system</h2>
                 <p class="sm--text">Deadline: 18 October</p>
               </div>
 
@@ -127,11 +128,130 @@
               </div>
 
             </div>
+            <!-- Card 2 -->
+            <div class="card card--2">
+              <div class="card__header">
+                <div class="card__imgs">
+                  <div class="card__img">+2</div>
+                  <img src="img/face-4.jpg" alt="faces" class="card__img">
+                  <img src="img/face-7.jpg" alt="faces" class="card__img">
+                </div>
+                <div class="card__menu">
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="card__dots"></a>
+                </div>
+              </div>
+              <div class="card__body">
+                <h2 class="heading--2">Make unique page for customer</h2>
+                <p class="sm--text">Deadline: 30 October</p>
+              </div>
+
+              <div class="card__footer">
+                <p class="sm--text">108 hours / 75%</p>
+                <progress value="75" max="100"></progress>
+              </div>
+
+            </div>
           </div>
         </div>
 
         <div class="main__footer">
+          <p class="heading--3">Reminders</p>
+          <div class="footer__card">
+            <p class="xsm--text">Tomorrow, 16:00-18:00</p>
+            <div class="footer__body">
+              <h3 class="heading--2-5">Discussion of the interm results of the projects</h3>
+              <button class="btn-reminder xsm--text">Set reminder</button>
+            </div>
+            <div class="footer__footer">
+              <button href="#" class="footer__dots"></button>
+              <button href="#" class="footer__dots"></button>
+              <button href="#" class="footer__dots"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="section__members">
+      <div class="members">
+        <div class="members__heading">
+          <div class="heading__nav-dots">
+            <ion-icon name="ellipsis-horizontal" class="three__dots"></ion-icon>
+          </div>
+          <div class="heading__body">
+            <button href="#" class="btn__add__projects">Add project</button>
+            <div>
+              <ul class="heading__items">
+                <li class="heading__item heading__noti-item"><ion-icon name="notifications-outline" class="heading__noti-item"></ion-icon>
+                </li>
+                <li class="heading__item img__name">
+                  <img src="img/face-5.jpg" alt="lady profile photo">
+                  <div class="pos__name">
+                    <p class="xsm--text">User</p>
+                    <p class="heading--3">Maria</p></div>
+                </li>
+                <li class="heading__item">
+                  <a href="#" class="dropdown"><ion-icon name="chevron-down"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="members__body">
+          <div class="team__members">
+            <div class="members__heading">
+              <p class="heading--2-5">Team members</p>
+            </div>
+            <div class="member__imgs">
+              <img src="img/face-1.jpg" alt="faces" class="member__img">
+              <img src="img/face-2.jpg" alt="faces" class="member__img">
+              <img src="img/face-3.jpg" alt="faces" class="member__img">
+              <img src="img/face-4.jpg" alt="faces" class="member__img">
+              <img src="img/face-5.jpg" alt="faces" class="member__img">
+              <div class="member__add"> + </div>
+            </div>
+          </div>
+
+          <div class="member__progress">
+            <div class="member__progress__type">
+              <p class="heading--4">Project time</p>
+              <h2 class="heading-3">18 hours</h2>
+            </div>
+            <div class="member__progress__type">
+              <p class="heading--4">Tasks in progress</p>
+              <h2 class="heading-3">2</h2>
+            </div>
+            <div class="member__progress__type">
+              <p class="heading--4">Finished tasks</p>
+              <h2 class="heading-3">16</h2>
+            </div>
+          </div>
+
+          <div class="members__tasks">
+            <div class="tasks__heading">
+              <p class="heading--2-5">Daily tasks (3)</p>
+              <a href="#" class="heading--3">Edit</a>
+            </div>
+            <div class="tasks__body">
+              <div class="task">
+                <h3 class="heading--3">Add new</h3>
+                <p class="">+</p>
+              </div>
+              <div class="task task--2">
+                <span><ion-icon name="ellipse"></ion-icon> New <input type="checkbox" name="checkbox" id=""></span>
+                <h3 class="heading--3">Change color pallete to more bright</h3>
+              </div>
+              <div class="task task--3">
+                <span><ion-icon name="ellipse"></ion-icon> New <input type="checkbox" name="checkbox" id=""></span>
+                <h3 class="heading--3">Make prototype for mobile version</h3>
+              </div>
+              <div class="task task--4">
+                <span><ion-icon name="ellipse"></ion-icon> New <input type="checkbox" name="checkbox" id=""></span>
+                <h3 class="heading--3">Make fixes in homepage</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

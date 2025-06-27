@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 33rem;
+  width: 50%;
   padding: 3rem;
   border-radius: 20px;
   background-color: $color-pink;
   gap: 1rem;
+  box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem #76767621;
 
   &__header {
     display: flex;
@@ -42,8 +44,9 @@
   &__body {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    height: 15rem;
+    gap: 1rem;
+    height: calc(15rem);
+    padding-bottom: auto;
   }
 
   &__footer {
@@ -68,4 +71,10 @@
       }
     }
   }
+}
+
+.card--1 {
+}
+
+.card--2 {
 }
