@@ -16,12 +16,16 @@
         <div class="sidebar__left__logos">
           <img src="img/logo.png" alt="ziferblat logo" class="sidebar__left__logo">
         </div>
+        <a href="#mobileSidebar" class="logo__menu">
+          <input type="checkbox" name="mobileSidebar" id="mobileSidebar" class="menu__input">
+          <label for="mobileSidebar"><ion-icon name="menu" class="menu__icon"></ion-icon></label>
+        </a>
         <ul class="sidebar__left__items">
-          <li class="sidebar__left__item"><button href="#"><ion-icon name="home-outline" class="sidebar__left__icon"></ion-icon></button></li>
-          <li class="sidebar__left__item"><button href="#"><ion-icon name="people-outline" class="sidebar__left__icon"></ion-icon></button></li>
-          <li class="sidebar__left__item"><button href="#"><ion-icon name="calendar-outline" class="sidebar__left__icon"></ion-icon></button></li>
-          <li class="sidebar__left__item"><button href="#"><img src="img/clock.png" alt="clock icon" class="clock__img"></button></li>
-          <li class="sidebar__left__item"><button href="#"><ion-icon name="chatbubble-outline" class="sidebar__left__icon"></ion-icon></button></li>
+          <li class="sidebar__left__item"><a href="#mobileSidebar"><ion-icon name="home-outline" class="sidebar__left__icon"></ion-icon></a></li>
+          <li class="sidebar__left__item"><a href="#mobileSidebar"><ion-icon name="people-outline" class="sidebar__left__icon"></ion-icon></a></li>
+          <li class="sidebar__left__item"><a href="#mobileSidebar"><ion-icon name="calendar-outline" class="sidebar__left__icon"></ion-icon></a></li>
+          <li class="sidebar__left__item"><a href="#mobileSidebar"><img href="#mobileSidebar" src="img/clock.png" alt="clock icon" class="clock__img"></a></li>
+          <li class="sidebar__left__item"><a href="#mobileSidebar"><ion-icon name="chatbubble-outline" class="sidebar__left__icon"></ion-icon></a></li>
         </ul>
         <div class="sidebar__left__doubt">
           <p>?</p>
@@ -29,7 +33,10 @@
       </div>
 
       <!-- Right Sidebar -->
-      <div class="sidebar__right">
+      <div id="mobileSidebar" class="sidebar__right">
+        <a href="#" class="sidebar__close-btn">
+          <ion-icon name="close-outline" class="sidebar__close-icon"></ion-icon>
+        </a>
         <div class="sidebar__right__header">
           <h1 class="heading--1">Ziferblat</h1>
           <p class="sm--text">Teamwork & time management</p>
@@ -93,6 +100,30 @@
     
     <div class="section__main">
       <div class="main">
+        <div class="members__heading">
+          <div class="heading__nav-dots">
+            <ion-icon name="ellipsis-horizontal" class="three__dots"></ion-icon>
+          </div>
+          <div class="heading__body">
+            <button href="#" class="btn__add__projects">Add project</button>
+            <div>
+              <ul class="heading__items">
+                <li class="heading__item heading__noti-item"><ion-icon name="notifications-outline" class="heading__noti-item"></ion-icon>
+                </li>
+                <li class="heading__item img__name">
+                  <img src="img/face-5.jpg" alt="lady profile photo">
+                  <div class="pos__name">
+                    <p class="xsm--text">User</p>
+                    <p class="heading--3">Maria</p></div>
+                </li>
+                <li class="heading__item">
+                  <a href="#" class="dropdown"><ion-icon name="chevron-down"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="main__search">
           <h1 class="heading--1">Today, 4 October</h1>
           <div class="search">
@@ -174,7 +205,7 @@
 
     <div class="section__members">
       <div class="members">
-        <div class="members__heading">
+        <div class="members__header">
           <div class="heading__nav-dots">
             <ion-icon name="ellipsis-horizontal" class="three__dots"></ion-icon>
           </div>

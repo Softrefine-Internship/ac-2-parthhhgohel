@@ -18,7 +18,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin response($breakpoint){
-    @if $breakpoint == phone{
+    @if $breakpoint == small-phone{
+        @media screen and (max-width: 20em){
+            @content
+        }
+    };
+
+    @if $breakpoint == mobile{
         @media screen and (max-width: 40.625em){
             @content
         }
