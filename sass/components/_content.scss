@@ -3,9 +3,26 @@
   // grid-template-rows: minmax(15rem, min-content) 1fr minmax(15rem, min-content);
   height: 100%;
   padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+
+  @include response(big-desktop) {
+    padding: 0 4rem;
+  }
+  @include response(desktop) {
+    padding: 0 1.7rem;
+  }
+  @include response(tab-port) {
+    padding: 0 1.5rem;
+  }
+  @include response(tab-land) {
+    padding: 0 1rem;
+  }
 
   &__search {
+    width: 100%;
     padding: 1rem;
+    padding-top: 2rem;
     grid-row-gap: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -13,6 +30,27 @@
     align-self: center;
     position: relative;
     padding-bottom: 2.8rem;
+
+    @include response(big-desktop) {
+      padding: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 3.5rem;
+    }
+    @include response(tab-land) {
+      padding: 1.5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.8rem;
+    }
+    @include response(tab-port) {
+      padding: 1.2rem;
+      padding-top: 2rem;
+      padding-bottom: 2.5rem;
+    }
+    @include response(mobile) {
+      padding: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+    }
   }
 
   .search {
@@ -35,6 +73,31 @@
       box-shadow: 3px 3px 1.5rem 1px #76767621;
       border: 1px solid $color-dark-2;
     }
+
+    @include response(big-desktop) {
+      font-size: 1.8rem !important;
+      height: 5rem;
+      padding: 0.5rem 1.5rem;
+      padding-left: 4rem;
+    }
+    @include response(tab-land) {
+      font-size: 1.6rem !important;
+      height: 4.5rem;
+      padding: 0.5rem 1.2rem;
+      padding-left: 3.5rem;
+    }
+    @include response(tab-port) {
+      font-size: 1.5rem !important;
+      height: 4rem;
+      padding: 0.5rem 1rem;
+      padding-left: 3rem;
+    }
+    @include response(mobile) {
+      font-size: 1.4rem !important;
+      height: 3.5rem;
+      padding: 0.5rem 0.8rem;
+      padding-left: 2.5rem;
+    }
   }
 
   .search__icon {
@@ -46,6 +109,27 @@
     width: 1.5rem;
     color: $color-dark-4;
     z-index: 99;
+
+    @include response(big-desktop) {
+      left: 1.5rem;
+      height: 2rem;
+      width: 2rem;
+    }
+    @include response(tab-land) {
+      left: 1.2rem;
+      height: 1.8rem;
+      width: 1.8rem;
+    }
+    @include response(tab-port) {
+      left: 1rem;
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+    @include response(mobile) {
+      left: 0.8rem;
+      height: 1.4rem;
+      width: 1.4rem;
+    }
   }
 
   &__body {
@@ -56,15 +140,72 @@
       justify-content: space-between;
       margin-bottom: 1.5rem;
 
-      & > a {
+      @include response(big-desktop) {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+      }
+      @include response(tab-land) {
+        padding: 0 1.5rem;
+        margin-bottom: 1.8rem;
+      }
+      @include response(tab-port) {
+        padding: 0 1.2rem;
+        margin-bottom: 1.6rem;
+      }
+      @include response(mobile) {
+        padding: 0 1rem;
+        margin-bottom: 1.4rem;
+      }
+
+      
+      @include response(big-desktop) {
+        & > p{
+        font-size: 1.8rem;
+        }
+        & > a {
         text-decoration: none;
         font-size: 1.3rem;
         color: $color-orange;
+          font-size: 1.6rem;
+        }
       }
-    }
+      @include response(tab-land) {
+        & > p{
+          font-size: 1.6rem;
+        }
+        & > a {
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: $color-orange;
+          font-size: 1.4rem;
+        }
+      }
+      @include response(tab-port) {
+        & > p{
+          font-size: 1.5rem;
+        }
+        & > a {
+          text-decoration: none;
+          font-size: 1.1rem;
+          color: $color-orange;
+          font-size: 1.3rem;
+        }
+      }
+      @include response(mobile) {
+        & > p{
+          font-size: 1.4rem;
+        }
+        & > a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: $color-orange;
+          font-size: 1.2rem;
+        }
+      }
     // display: flex;
     // flex-direction: column;
     // // height: ;
+    }
   }
 
   &__cards {
@@ -73,6 +214,29 @@
     justify-content: space-between;
     gap: 2rem;
     margin-bottom: 3rem;
+    // height: 50rem;
+
+    @include response(big-desktop) {
+      padding: 0 2rem;
+      gap: 3rem;
+
+      // height: min-content;
+    }
+    @include response(desktop) {
+      padding: 0 1rem;
+      gap: 2.5rem;
+      height: 50rem;
+    }
+    @include response(tab-land) {
+      padding: 0 .8rem;
+      flex-direction: column;
+      overflow: scroll;
+      gap: 2rem;
+    }
+    @include response(tab-port) {
+      padding: 0 .6rem;
+      gap: 1.5rem;
+    }
   }
 
   &__footer {
@@ -81,6 +245,35 @@
     flex-direction: column;
     gap: 0.7rem;
     margin-top: 2rem;
+
+    @include response(big-desktop) {
+      padding: 0 2rem;
+      gap: 2rem;
+      & > p {
+        font-size: 1.8rem;
+      }
+    }
+    @include response(tab-land) {
+      padding: 0 1.5rem;
+      gap: 1.5rem;
+      & > p {
+        font-size: 1.6rem;
+      }
+    }
+    @include response(tab-port) {
+      padding: 0 1.2rem;
+      gap: 1.2rem;
+      & > p {
+        font-size: 1.5rem;
+      }
+    }
+    @include response(mobile) {
+      padding: 0 1rem;
+      gap: 1rem;
+      & > p {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   .footer {
@@ -88,9 +281,26 @@
       border-radius: 2rem;
       border: 1px solid $color-dark-5;
       padding: 2.5rem;
+
+      @include response(big-desktop) {
+        padding: 3rem;
+      }
+      @include response(desktop) {
+        padding: 2.5rem;
+      }
+      @include response(tab-land) {
+        padding: 2rem;
+      }
+      @include response(tab-port) {
+        padding: 1.5rem;
+      }
+      @include response(mobile) {
+        padding: 1rem;
+      }
     }
 
     &__body {
+      width: 100%;
       display: flex;
       gap: 10rem;
       justify-content: space-between;
@@ -106,6 +316,22 @@
       justify-content: center;
       gap: 0.5rem;
       margin-top: 2rem;
+
+      @include response(big-desktop) {
+        margin-top: 3rem;
+      }
+      @include response(desktop) {
+        margin-top: 2.5rem;
+      }
+      @include response(tab-land) {
+        margin-top: 2rem;
+      }
+      @include response(tab-port) {
+        margin-top: 1.5rem;
+      }
+      @include response(mobile) {
+        margin-top: 1rem;
+      }
     }
 
     &__dots {
@@ -115,6 +341,28 @@
       height: 0.7rem;
       cursor: pointer;
       background-color: $color-pink-light;
+      transition: background-color 0.1s ease-in-out;
+
+      @include response(big-desktop) {
+        width: 1rem;
+        height: 1rem;
+      }
+      @include response(desktop) {
+        width: 0.9rem;
+        height: 0.9rem;
+      }
+      @include response(tab-land) {
+        width: 0.8rem;
+        height: 0.8rem;
+      }
+      @include response(tab-port) {
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+      @include response(mobile) {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
 
       &:hover {
         background-color: $color-pink-dark;

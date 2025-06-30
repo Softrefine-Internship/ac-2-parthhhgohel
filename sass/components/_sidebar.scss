@@ -10,6 +10,10 @@
     height: 100%;
     background-color: $color-light;
 
+    @include response(big-desktop){
+    grid-template-columns: minmax(9rem, 1fr);
+    }
+
     &__logos {
       height: 100%;
       width: 100%;
@@ -25,6 +29,11 @@
       height: 5rem;
       width: 5.7rem;
       justify-self: center;
+
+      @include response(big-desktop){
+        height: 5.5rem;
+        width: 6.5rem;
+      }
       // margin-top: auto;
     }
 
@@ -65,6 +74,12 @@
       padding: 2.5rem;
       height: 2.5rem;
       width: 2.5rem;
+
+      @include response(big-desktop){
+        padding: 3rem ;
+        height: 3rem;
+        width: 3rem;
+      }
     }
 
     &__doubt {
@@ -85,6 +100,12 @@
       &:hover {
         background-color: $color-dark-3;
       }
+
+      @include response(big-desktop){
+        height: 4.5rem;
+        width: 4.5rem;
+        font-size: 2rem !important;
+      }
     }
   }
 
@@ -104,6 +125,13 @@
       border-bottom: 1px solid $color-dark-5;
       align-content: center;
       padding: 0 2.5rem;
+
+      @include response(big-desktop) {
+        padding: 2.5rem 2.5rem;
+      }
+      @include response(tab-land) {
+        padding: 1.5rem 2.5rem;
+      }
     }
   }
   &__menu-bar {

@@ -3,25 +3,90 @@
   flex-direction: column;
   justify-content: space-between;
   height: 33rem;
-  width: 50%;
+  width: 100%;
   padding: 3rem;
   border-radius: 20px;
   background-color: $color-pink;
   gap: 1rem;
   box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem #76767621;
 
+  @include response(big-desktop) {
+    height: 40rem;
+    padding: 4rem;
+  }
+  @include response(desktop) {
+    height: 35rem;
+    padding: 3rem;
+  }
+  @include response(tab-land) {
+    height: 30rem;
+    padding: 2.5rem;
+  }
+  @include response(tab-port) {
+    height: 28rem;
+    padding: 2rem;
+  }
+  @include response(mobile) {
+    height: 25rem;
+    padding: 1.5rem;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+  &__imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: fit-content;
+  }
+  
   &__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $color-light;
+    font-size: 1.5rem;
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 50%;
     border: 2px solid $color-pink;
-    display: inline-block;
+
+    &-1{
+      z-index: 10;
+    }
+    &-2{
+      z-index: 5;
+    }
+    &-3{
+      z-index: 2;
+    }
+
+    @include response(big-desktop) {
+      height: 4rem;
+      width: 4rem;
+    }
+    @include response(desktop) {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+    @include response(tab-land) {
+      height: 3rem;
+      width: 3rem;
+    }
+    @include response(tab-port) {
+      height: 2.8rem;
+      width: 2.8rem;
+    }
+    @include response(mobile) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
 
     &:first-child {
       background-color: $color-dark-2;
@@ -33,20 +98,37 @@
     }
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2.8rem;
     }
   }
 
   &__dots {
     height: 2rem;
+    
+    @include response(big-desktop) {
+      height: 2.5rem;
+    }
+    @include response(desktop) {
+      height: 2.1rem;
+    }
+    @include response(tab-land) {
+      height: 1.7rem;
+    }
+    @include response(tab-port) {
+      height: 1.7rem;
+    }
+    @include response(mobile) {
+      height: 1.4rem;
+    }
   }
+
 
   &__body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: calc(15rem);
-    padding-bottom: auto;
+    height: calc(100% - 15rem);
+    // padding-bottom: auto;
   }
 
   &__footer {
@@ -74,7 +156,13 @@
 }
 
 .card--1 {
+
 }
 
 .card--2 {
+  background-color: $color-cream !important;
+
+  .img-br-2{
+    border: 2px solid $color-cream;
+  }
 }

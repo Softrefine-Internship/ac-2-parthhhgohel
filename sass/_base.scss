@@ -8,6 +8,19 @@
 
 html {
   font-size: 62.5%;
+
+  @include response(big-desktop) {
+    font-size: 65%;
+  }
+  @include response(tab-land) {
+    font-size: 60%;
+  }
+  @include response(tab-port) {
+    font-size: 57.5%;
+  }
+  @include response(mobile) {
+    font-size: 55%;
+  } 
 }
 
 body {
@@ -33,6 +46,11 @@ body {
   margin: 1.8rem;
   height: 2.5rem;
   width: 2.5rem;
+
+  @include response(big-desktop) {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 .section__main {
@@ -42,4 +60,8 @@ body {
 .section__members {
   grid-column: 3 / 4;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
