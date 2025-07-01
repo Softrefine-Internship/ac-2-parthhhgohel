@@ -14,14 +14,14 @@
   }
 
   @include response(tab-port){
-    &__header{
-      display: none;
-    }
   } 
-
+  
   @include response(mobile) {
     padding: 0 1.5rem;
     padding-left: 2rem;
+    &__header{
+      display: none;
+    }
 
     &__header{
       display: none;

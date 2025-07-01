@@ -67,6 +67,9 @@ body {
   // grid-template-rows: 1fr auto;
 }
 .clock__img {
+  display: flex;
+  justify-self: center;
+
   margin: 1.8rem;
   height: 2.5rem;
   width: 2.5rem;

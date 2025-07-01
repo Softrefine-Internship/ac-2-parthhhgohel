@@ -19,12 +19,15 @@
   @include response(tab-port) {
     padding: 0 1.5rem;
 
-    .members__heading {
-      display: block;
-    }
   }
   @include response(tab-land) {
     padding: 0 1rem;
+  }
+  @include response(mobile) {
+    padding: 0 0.5rem;
+    .members__heading {
+      display: block;
+    }
   }
 
   &__search {
